@@ -175,20 +175,20 @@ if __name__ == "__main__":
 
     if len(sys.argv) < 2:
         print "Usage: %s file_to_convert.egsphant" % __file__
-        exit()
+        sys.exit()
 
     path = os.path.normpath(sys.argv[1])
 
     if not os.path.exists(path):
         print "Unable to find '%s' egsphant file" % path
-        exit()
+        sys.exit()
 
 
     try:
         data = parse_egsphant(path)
     except Exception, e:
         print "Invalid egsphant file. Error:\n\t%s\n" % e
-        exit()
+        sys.exit()
 
     idx =  path.find(".egsphant")
 
@@ -200,13 +200,13 @@ if __name__ == "__main__":
         density_name = write_density(data, outpath)
     except Exception, e:
         print "Failed to write density data. Error:\n\t%s\n" % e
-        exit()
+        sys.exit()
 
     try:
         ramp_name = write_ramp(data, outpath)
     except Exception, e:
         print "Failed to write ramp data. Error:\n\t%s\n" % e
-        exit()
+        sys.exit()
 
 
 
