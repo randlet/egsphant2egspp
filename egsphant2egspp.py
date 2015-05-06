@@ -44,7 +44,7 @@ def write_density(data, path):
     path = path + ".density"
     f = open(path, "wb")
 
-    f.write(pack('?', IS_LITTLE_ENDIAN))
+    f.write(pack('b', IS_LITTLE_ENDIAN))
 
     f.write(pack('iii', *data['dims']))
 
