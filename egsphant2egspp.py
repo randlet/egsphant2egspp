@@ -4,7 +4,7 @@ This is a simple script for converting EGSnrc egsphant files
 to the binary density and text ramp files used by the egs++
 XYZGeometry.
 
-Usage: egsphant2esgpp.py input_egsphant_file.egsphant
+Usage: egsphant2egspp.py input_egsphant_file.egsphant
 
 This will produce two files:
 
