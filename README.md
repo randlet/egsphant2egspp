@@ -28,6 +28,8 @@ which can then be used to create an XYZGeometry like so:
 You can also use a custom ramp file if desired.
 
 An example egsphant file is included for testing (the .density & .ramp
-resulting from its conversion are also included).  There is also a
-sample egs++ geometry file included that uses the .density and .ramp files
-to create a phantom geometry.  The geometry can be viewed with egs_view.
+resulting from its conversion are also included).  There are also two
+sample egs++ geometry files included that result in the same simulation
+geometry.  One defines the geometry explicitly and one uses the .density
+and .ramp files to create a phantom geometry.  The geometries can be
+viewed with egs_view.
